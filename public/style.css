@@ -1,0 +1,30 @@
+/* Tailwind CSSの機能をインポート */
+@import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css";
+
+/* Google Fontsの読み込み */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* カスタムスタイル */
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hero-bg {
+    /* スウェーデンの街並み（ストックホルムのガムラスタン）をイメージした画像に変更 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://placehold.co/1600x800/006aa7/ffcd00?text=Välkommen+till+Sverige');
+}
+
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+    animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

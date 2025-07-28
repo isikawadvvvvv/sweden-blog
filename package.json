@@ -1,0 +1,15 @@
+{
+    "name": "my-awesome-blog",
+    "version": "1.0.0",
+    "description": "A blog application with a multi-file structure.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.19.2"
+    }
+  }
+  
